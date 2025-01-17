@@ -176,7 +176,7 @@ fun CoinDetailsScreen(
 //                    },
 //                    onXLabelWidthChanged = { labelWidth = it })
 //            }
-                LineChart(
+                LineChartOld(
                     dataPoints = coin.coinPriceHistory,
                     style = ChartStyle(
                         chartLineColor = MaterialTheme.colorScheme.primary,
@@ -202,7 +202,7 @@ fun CoinDetailsScreen(
                     onSelectedDataPoint = {
                         selectedDataPoint = it
                     },
-                    onXLabelWidthChanged = { labelWidth = it })
+                    onXLabelWidthChange = { labelWidth = it })
             }
         }
     }
